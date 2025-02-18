@@ -735,4 +735,109 @@
         crossorigin="anonymous"></script>
 </head>
 
+<head>
 
+<section id="contact">
+    <div class="main-container">
+        <div class="content">
+            <h1 data-aos="fade-up" data-aos-duration="1500">Leave Me a Message</h1>
+            <form 
+                action="https://formspree.io/f/xwpvwqdk" 
+                method="POST" 
+                data-aos="fade-up" 
+                data-aos-duration="1500"
+            >
+                <div>
+                    <label for="email">Your Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="message">Your Message:</label>
+                    <textarea name="message" id="message" rows="5" required></textarea>
+                </div>
+                <div class="btn">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<style> #contact {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 50px 0;
+    color: white;
+}
+
+#contact .main-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact form {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#contact form div {
+    margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+#contact form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.5rem; /* Increased font size */
+    color: #fff; /* White color for labels */
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%; /* Make input and textarea take full width */
+    max-width: 100%; /* Ensure they don't exceed the container */
+    padding: 15px; /* Increased padding for better touch targets */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    background-color: white;
+    color: black;
+    font-size: 1.2rem; /* Increased font size */
+    transition: border 0.3s ease;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    border: 2px solid var(--primary-color);
+    outline: none;
+}
+
+#contact form button {
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem; /* Increased font size for button */
+}
+
+#contact form button:hover {
+    background-color: darkgreen;
+}</style>
+</head>
